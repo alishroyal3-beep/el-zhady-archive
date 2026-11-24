@@ -67,7 +67,7 @@ $('#play').onclick=()=>{if(tm)stop();else{start();lastA=-1;paint()}};
 $('#wave').addEventListener('click',e=>{const r=$('#wave').getBoundingClientRect();pos=Math.round((e.clientX-r.left)/r.width*DUR);paint();start()});
 $('#tr').addEventListener('click',e=>{const l=e.target.closest('.tl');if(l){pos=+l.dataset.t;lastA=-1;start();paint()}});
 load(0);
-window.EJ={TH,load,start,stop,go:sel=>$(sel)?.scrollIntoView({behavior:reduce?'auto':'smooth'}),cite:()=>'«Ел жады» архиві, ЕЖ-'+String(210+cur).padStart(6,'0')+', 1-трек · '+TH[cur].n+', '+TH[cur].k,S,timer:()=>$('#tb').click()};
+window.EJ={TH,load,start,stop,go:sel=>$(sel)?.scrollIntoView({behavior:reduce?'auto':'smooth'}),cite:()=>'«Дала дауысы» архиві, ДД-'+String(210+cur).padStart(6,'0')+', 1-трек · '+TH[cur].n+', '+TH[cur].k,S,timer:()=>$('#tb').click()};
 
 /* split headings into words */
 $$('.split').forEach(h=>{let i=0;const walk=n=>[...n.childNodes].forEach(c=>{if(c.nodeType===3){const f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(t=>{if(!t)return;if(/^\s+$/.test(t))return f.appendChild(document.createTextNode(t));const s=document.createElement('span');s.className='w';s.style.setProperty('--i',i++);s.textContent=t;f.appendChild(s)});c.replaceWith(f)}else if(c.nodeType===1)walk(c)});walk(h)});

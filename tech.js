@@ -66,7 +66,7 @@ if(bac){const img=new Image();img.src='karlag.jpg';let old=null;
   let swept=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!swept&&!reduce){swept=true;let t=0;const an=()=>{t+=.02;bar.value=50+Math.sin(t*3)*40*(1-t);draw();if(t<1)requestAnimationFrame(an);else{bar.value=50;draw()}};requestAnimationFrame(an)}},{threshold:.5}).observe(bac)}
 
 /* ---------- 5. QR citation ---------- */
-const qr=()=>{const box=$('#qr');if(!box)return;const txt=EJ.cite?EJ.cite():'«Ел жады» архиві';$('#qrt').textContent=txt;box.innerHTML='';
+const qr=()=>{const box=$('#qr');if(!box)return;const txt=EJ.cite?EJ.cite():'«Дала дауысы» архиві';$('#qrt').textContent=txt;box.innerHTML='';
   if(window.QRCode){try{new QRCode(box,{text:'https://alishroyal3-beep.github.io/el-zhady-archive/#portal',width:168,height:168,colorDark:'#17213f',colorLight:'#fffdf8',correctLevel:QRCode.CorrectLevel.M})}catch(e){box.textContent='QR жасалмады'}}else box.textContent='QR кітапханасы жүктелмеді'};
 qr();
 
