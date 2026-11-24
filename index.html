@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ел жады · Ауызша тарих архиві</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bgart" aria-hidden="true"></canvas>
+<div id="prog"></div>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#hero">Ел жады</a>
+    <button class="kbtn" id="presb" aria-label="Презентация режимі">Презентация</button>
+    <button class="kbtn" id="kopen" aria-label="Іздеу (Ctrl+K)">Іздеу <kbd>Ctrl K</kbd></button>
+    <div class="links"><a href="#sg">Сингапур</a><a href="#portal">Портал</a><a href="#kz">Архивтер</a><a href="#lab">Технология</a><a href="#arch">Модель</a><a href="#gallery">Фотолар</a><a href="#src">Дереккөздер</a></div>
+  </div>
+</nav>
+
+<header id="hero" class="band">
+  <div class="wrap hgrid">
+    <div>
+      <p class="kick">«Мұрағат ісі» пәні бойынша топтық жоба</p>
+      <h1 class="split">Әр дауыс — <em>ел тарихы</em></h1>
+      <p class="lead">Сингапурдың Ауызша тарих орталығы үлгісімен Қазақстанға ұсынылған «Ел жады» архиві.</p>
+      <div class="btns"><a class="btn pri" href="#sg">Сингапур тәжірибесі</a><a class="btn" href="#arch">Архив моделі</a></div>
+    </div>
+    <figure class="photo-hero">
+      <div class="arch-img"><img src="nas.jpg" alt="Сингапур Ұлттық архивінің ғимараты" width="1000" height="665"></div>
+      <figcaption>Сингапур Ұлттық архиві · Choo Yut Shing, <a href="https://commons.wikimedia.org/wiki/File:National_Archives_of_Singapore_(2).jpg" target="_blank" rel="noopener">CC BY 2.0</a></figcaption>
+    </figure>
+  </div>
+  <div class="fig3d" aria-hidden="true"><div class="fallback3d" id="fb"></div><canvas id="gl"></canvas></div>
+</header>
+
+<section id="sg" class="band light">
+  <div class="wrap">
+    <p class="kick rv">Зерттелген архив</p>
+    <h2 class="split">Сингапур: дауыспен жазылған тарих</h2>
+    <p class="lead rv">1979 жылдан бері Ұлттық архив жанындағы орталық куәгерлермен сұхбат жазып, сақтап, көпшілікке ашады<a class="src" data-s="1"></a>. Сұхбат берушілер арасында рикша тартушылар да, Ли Куан Ю да бар<a class="src" data-s="7"></a>.</p>
+    <div class="stats rv">
+      <div class="stat"><b class="cnt" data-to="1979">0</b><span>құрылған жылы<a class="src" data-s="4"></a></span></div>
+      <div class="stat"><b><span class="cnt" data-to="6000">0</span>+</b><span>сұхбат<a class="src" data-s="3"></a></span></div>
+      <div class="stat"><b><span class="cnt" data-to="27000">0</span>+</b><span>сағат жазба<a class="src" data-s="3"></a></span></div>
+      <div class="stat"><b><span class="cnt" data-to="1100">0</span>+</b><span>сағат: жапон оккупациясы<a class="src" data-s="5"></a></span></div>
+    </div>
+    <ol class="tline rv">
+      <li><b>1968</b><span>Ұлттық архив құрылды<a class="src" data-s="1"></a></span></li>
+      <li><b>1979</b><span>Ауызша тарих бөлімі ашылды<a class="src" data-s="1"></a></span></li>
+      <li><b>1981</b><span>Жапон оккупациясы жобасы: 175 куәгер<a class="src" data-s="5"></a></span></li>
+      <li><b>1993</b><span>«Ауызша тарих орталығы» атауы<a class="src" data-s="1"></a></span></li>
+      <li><b>Бүгін</b><span>Archives Online порталы<a class="src" data-s="2"></a></span></li>
+    </ol>
+    <div class="feat">
+      <button class="flip rv"><div class="in"><div class="face front"><h3>Тақырыптық жобалар</h3></div><div class="face back"><p>Саясат, мемлекеттік қызмет, жойылып бара жатқан кәсіптер, өнер, медицина<a class="src" data-s="3"></a>.</p></div></div></button>
+      <button class="flip rv"><div class="in"><div class="face front"><h3>Кәсіби сұхбат</h3></div><div class="face back"><p>Маман мұқият дайындалып, арнайы жазба бөлмесінде сұхбат алады<a class="src" data-s="6"></a>.</p></div></div></button>
+      <button class="flip rv"><div class="in"><div class="face front"><h3>Archives Online</h3></div><div class="face back"><p>Аудио, транскрипт, уақыт белгілері және транскрипт мәтінінен іздеу<a class="src" data-s="2"></a>.</p></div></div></button>
+      <button class="flip rv"><div class="in"><div class="face front"><h3>Келісім шарттары</h3></div><div class="face back"><p>Жазбаның қашан ашылатынын сұхбат берушімен келісілген шарт анықтайды<a class="src" data-s="2"></a>.</p></div></div></button>
+    </div>
+  </div>
+</section>
+
+<section id="portal" class="band">
+  <div class="wrap">
+    <p class="kick rv">Портал үлгісі</p>
+    <h2 class="split">Тақырыпты таңдап, тыңдаңыз</h2>
+    <div class="themes rv" id="themes"></div>
+    <div class="player rv">
+      <button class="pb" id="play" aria-label="Ойнату"><svg viewBox="0 0 24 24" id="pi"><path d="M7 4v16l13-8z"/></svg></button>
+      <div class="pmain">
+        <b id="ptitle"></b><span id="pmeta"></span>
+        <div id="wave"></div>
+      </div>
+    </div>
+    <div class="tr rv" id="tr"></div>
+    <p class="demo">Үлгі сұхбаттар ойдан құрастырылған. Домбыра үні браузерде синтезделеді, мәтінді сөйлеу синтезі оқиды.</p>
+  </div>
+</section>
+
+
+<section id="kz" class="band">
+  <div class="wrap">
+    <p class="kick rv">Қазақстан архивтері</p>
+    <h2 class="split">Бұрын және қазір</h2>
+    <p class="lead rv">Елімізде 236 мемлекеттік архив жұмыс істейді, оларда 27,8 млн сақтау бірлігі бар<a class="src" data-s="17"></a>. Картадағы архивті басыңыз.</p>
+    <div class="kzmodes rv"><button class="kzm on" data-m="a">Архивтер</button><button class="kzm" data-m="m">Естеліктер</button></div>
+    <div class="kzgrid">
+      <div class="kzmap rv" id="kzmap2">
+        <img src="kzmap.jpg" alt="Қазақстанның рельеф картасы" width="1200" height="686">
+        <svg class="kzlines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path id="kzline" d=""/></svg>
+        <div id="pins"></div>
+        <span class="mapcr">Карта: Wikimedia Commons, <a href="https://commons.wikimedia.org/wiki/File:Relief_Map_of_Kazakhstan.png" target="_blank" rel="noopener">CC BY-SA 3.0</a></span>
+      </div>
+      <aside class="kzcard" id="kzcard" aria-live="polite"></aside>
+    </div>
+  </div>
+</section>
+
+<section id="lab" class="band light">
+  <div class="wrap">
+    <p class="kick rv">Технологиялар</p>
+    <h2 class="split">Архивтің цифрлық зертханасы</h2>
+    <div class="lab">
+      <div class="demo-p rv">
+        <h3>Цифрлық қолтаңба</h3><p class="sub">SHA-256: бір әріп өзгерсе, қолтаңба да өзгереді</p>
+        <textarea id="fxt" rows="4" aria-label="Транскрипт мәтіні"></textarea>
+        <div class="hash"><code id="fxh">…</code><span class="fxs" id="fxs"></span></div>
+        <button class="btn" id="fxr">Түпнұсқаны қайтару</button>
+      </div>
+      <div class="demo-p rv">
+        <h3>Фотоны қалпына келтіру</h3><p class="sub">Сызықты жылжытыңыз: бұрын және кейін</p>
+        <div class="ba" id="ba"><canvas id="bac"></canvas><input type="range" id="bar" min="0" max="100" value="50" aria-label="Салыстыру"><span class="bl">Бұрын</span><span class="br">Кейін</span></div>
+      </div>
+      <div class="demo-p rv">
+        <h3>QR сілтеме</h3><p class="sub">Телефонмен сканерлеп, порталды ашыңыз</p>
+        <div class="qrw"><div id="qr"></div><p id="qrt"></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="arch" class="band">
+  <div class="wrap">
+    <p class="kick rv">Ұсынылатын модель</p>
+    <h2 class="split">Қазақстанда қандай архив болуы керек?</h2>
+    <p class="lead rv">«Ел жады» — Ұлттық архив жанындағы ауызша тарих орталығы: қазақ шаңырағы мен Сингапур тәжірибесі бір ғимаратта. Ғимаратты айналдырып, нөмірлерді басыңыз.</p>
+    <div class="archgrid">
+      <div class="stage rv" id="stage" tabindex="0" aria-label="Архив ғимаратының 3D моделі">
+        <canvas id="arch3d"></canvas>
+        <div id="hots"></div>
+        <div class="ctrl"><button class="btn act" id="aRot">Айналуды тоқтату</button><button class="btn" id="aExp">Қабаттарды ашу</button><button class="btn" id="aTour">Экскурсия</button><button class="btn" id="aXray">Рентген</button><button class="btn" id="aNight">Түнгі жарық</button><button class="btn" id="aReset">Бастапқы көрініс</button></div>
+      </div>
+      <aside class="info rv" id="ainfo" aria-live="polite"></aside>
+    </div>
+    <ul class="take rv">
+      <li><b>Жобалық тәсіл</b><span>Жыраулар, қуғын-сүргін, Желтоқсан, Семей полигоны, тың игеру</span></li>
+      <li><b>Цифрлық портал</b><span>Аудио, транскрипт, іздеу: Archives Online сияқты</span></li>
+      <li><b>Келісім</b><span>Жазбаның ашылу мерзімін сұхбат беруші таңдайды</span></li>
+      <li><b>Қоғаммен байланыс</b><span>«Атамның дауысы» акциясы, мобильді студия, мектеп сабақтары</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="gallery" class="band light">
+  <div class="wrap">
+    <div class="ghead"><div><p class="kick rv">Фотолар</p><h2 class="split">Сингапурдан Қазақстанға</h2></div>
+      <div class="gnav"><button class="btn" id="gprev" aria-label="Алдыңғы">‹</button><button class="btn" id="gnext" aria-label="Келесі">›</button></div></div>
+    <div class="gal" id="gal" tabindex="0"></div>
+  </div>
+</section>
+
+
+<section id="src" class="band light">
+  <div class="wrap">
+    <p class="kick rv">Дереккөздер</p>
+    <ol class="slist" id="slist"></ol>
+    <ol class="slist" id="plist"></ol>
+  </div>
+</section>
+
+<footer><div class="wrap">«Ел жады» · топтық жобаның прототипі · үлгі: Oral History Centre, National Archives of Singapore</div></footer>
+<div id="iris" aria-hidden="true"><svg viewBox="-60 -60 120 120" class="shan"><circle r="46"/><circle r="38"/><path d="M-38 0A38 38 0 0 1 38 0M0-38A38 38 0 0 1 0 38M-27-27A38 38 0 0 1 27 27M27-27A38 38 0 0 1-27 27"/><g class="uyk"></g></svg><b id="irisT"></b></div><div id="presbar" hidden><span id="presn"></span><button id="presx">Шығу</button></div>
+<div class="pal" id="pal" hidden><div class="palbox" role="dialog" aria-label="Жылдам іздеу"><input id="palq" placeholder="Бөлім, тақырып, дереккөз…" autocomplete="off"><ul id="pall"></ul><p class="palh">↑ ↓ таңдау · Enter ашу · Esc жабу</p></div></div>
+<div id="timer"><b id="tt">0:00</b><button id="tb" aria-label="Таймер">▶</button><button id="trs" aria-label="Нөлдеу">↺</button></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="app.js"></script>
+<script src="tech.js"></script>
+<script src="bg.js"></script>
+<script src="arch3d.js"></script>
+<script src="fx3d.js"></script>
+<script src="kzarch.js"></script>
+</body>
+</html>
